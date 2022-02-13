@@ -319,6 +319,10 @@ a {
     &__menu-text {
       display: inline-block;
     }
+    &-container {
+      position: relative;
+      top: -115px;
+    }
   }
 
   .navigation {
@@ -350,5 +354,43 @@ a {
         top: 55%;
       }
     }
+  }
+}
+
+@media screen and (min-width: 993px) {
+  .nav {
+    &__list {
+      &-item a {
+        font-size: 1.8rem;
+      }
+    }
+  }
+  .header {
+    &__title {
+      font-size: 4rem;
+    }
+    &__subtitle {
+      font-size: 2.3rem;
+    }
+  }
+  .section {
+    &__header {
+      &-left {
+        height: 70vh;
+      }
+      &-right {
+        height: 56vh;
+      }
+      &-center {
+        padding: 3rem;
+        max-width: 550px;
+        h3 {
+          font-size: 4.5rem;
+        }
+      }
+    }
+  }
+  .navigation {
+    max-width: 400px;
   }
 }
