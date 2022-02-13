@@ -376,14 +376,16 @@ a {
   .section {
     &__header {
       &-left {
-        height: 70vh;
+        height: 75vh;
       }
       &-right {
-        height: 56vh;
+        height: 65vh;
       }
       &-center {
         padding: 3rem;
-        max-width: 550px;
+        max-width: 600px;
+        left: 64%;
+        top: 52%;
         h3 {
           font-size: 4.5rem;
         }
