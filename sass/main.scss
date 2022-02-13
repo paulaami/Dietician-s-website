@@ -1,7 +1,11 @@
 @font-face {
-  font-family: "Amalfi Coast";
-  src: url("../assets/fonts/amalfi_coast.woff") format("woff"),
-    url("../assets/fonts/Amalfi_Coast.ttf") format("opentype");
+  font-family: "La Parisienne";
+  src: url("../assets/fonts/la_parisienne.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Biko";
+  src: url("../assets/fonts/biko_regular.woff") format("woff");
 }
 
 @import "./colors";
@@ -44,22 +48,31 @@ a {
 .header {
   margin-top: 3em;
   margin-bottom: 5rem;
+  img {
+    display: block;
+    margin: 0 auto;
+  }
   &__title,
   &__subtitle {
     text-align: center;
   }
 
   &__title {
-    text-transform: uppercase;
-    font-size: 2.1rem;
-    letter-spacing: 0.1em;
+    font-size: 12rem;
+    font-weight: 400;
     color: $main-grey;
+    font-family: "La Parisienne";
   }
 
   &__subtitle {
-    font-size: 1.9rem;
+    font-family: "Biko";
+    font-size: 1.3rem;
     color: $dark-beige;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    position: relative;
+    top: -10px;
+    left: -23px;
   }
 }
 .nav {
@@ -281,7 +294,7 @@ a {
 @media screen and (min-width: 375px) {
   .header {
     &__title {
-      font-size: 2.3rem;
+      // font-size: 2.3rem;
     }
   }
 
@@ -307,7 +320,7 @@ a {
   .header {
     margin-bottom: 3em;
     &__title {
-      font-size: 3rem;
+      // font-size: 3rem;
     }
   }
 
@@ -367,10 +380,10 @@ a {
   }
   .header {
     &__title {
-      font-size: 4rem;
+      // font-size: 4rem;
     }
     &__subtitle {
-      font-size: 2.3rem;
+      // font-size: 2.3rem;
     }
   }
   .section {
