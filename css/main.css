@@ -34,6 +34,7 @@ body {
   color: #3b403f;
   background-color: #fff;
   overflow-x: hidden;
+  height: 5000px;
 }
 
 .container {
@@ -456,13 +457,15 @@ a {
     left: initial;
     -webkit-transform: initial;
             transform: initial;
+    background-color: #fff;
   }
   .nav__menu-text {
     display: inline-block;
   }
   .nav-container {
-    position: relative;
-    top: -320px;
+    position: fixed;
+    top: 0;
+    z-index: 100;
   }
   .navigation {
     left: -50%;
