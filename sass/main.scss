@@ -29,13 +29,12 @@ html {
 }
 
 body {
-  height: 1100px;
   max-width: 100vw;
   font-family: "Biko";
   font-weight: 400;
   color: $main-grey;
   background-color: $white;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .container {
@@ -55,11 +54,10 @@ a {
   margin-top: 2em;
   margin-bottom: 7rem;
   &__logo {
-    display: none;
     margin: 0 auto;
   }
   .logo {
-    display: inline-block;
+    display: none;
     position: relative;
     left: 50%;
     transform: translate(-50%);
@@ -390,7 +388,10 @@ a {
   .header {
     margin-bottom: 3em;
     &__title {
-      // font-size: 3rem;
+      font-size: 8rem;
+    }
+    .logo {
+      display: inline-block;
     }
   }
 
@@ -404,7 +405,7 @@ a {
     }
     &-container {
       position: relative;
-      top: -115px;
+      top: -320px;
     }
   }
 
@@ -433,8 +434,16 @@ a {
         height: 38vh;
       }
       &-center {
-        left: 70%;
-        top: 55%;
+        left: 65%;
+        top: 50%;
+        h3 {
+          font-size: 2.4rem;
+        }
+        .header-last {
+          h3 {
+            font-size: 8rem;
+          }
+        }
       }
     }
   }
@@ -443,13 +452,10 @@ a {
 @media screen and (min-width: 993px) {
   .header {
     &__title {
-      // font-size: 4rem;
+      font-size: 9rem;
     }
     &__subtitle {
       // font-size: 2.3rem;
-    }
-    &__logo {
-      display: block;
     }
   }
   .section {
@@ -462,9 +468,17 @@ a {
       }
       &-center {
         padding: 3rem;
-        max-width: 600px;
+        max-width: 545px;
         left: 64%;
         top: 52%;
+        h3 {
+          font-size: 3rem;
+        }
+        .header-last {
+          h3 {
+            font-size: 10rem;
+          }
+        }
       }
     }
   }
