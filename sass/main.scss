@@ -14,6 +14,7 @@
 
 @import "./colors";
 @import "./mixins";
+@import "./keyframes";
 
 *,
 *::after,
@@ -100,31 +101,7 @@ a {
   }
 }
 
-@keyframes flyApple {
-  0% {
-      transform: translateY(0);
-  }
-  50% {
-      transform: translateY(5px);
-  }
-
-  100% { 
-    transform: translateY(0);
-  }
-}
-
-@keyframes flyCake {
-  0% {
-      transform: translateY(5px);
-  }
-  50% {
-      transform: translateY(0);
-  }
-
-  100% {
-    transform: translateY(5px);
-  }
-}
+// NAV
 
 .nav {
   z-index: 100;
@@ -292,7 +269,9 @@ a {
 }
 
 .section {
+  // HEADER
   &__header {
+    min-height: 500px;
     .container {
       position: relative;
     }
@@ -355,6 +334,62 @@ a {
         font-weight: 400;
         letter-spacing: 0;
         font-size: 6rem;
+      }
+    }
+  }
+
+  /*ABOUT*/
+  &__about {
+    padding: 5rem 0;
+    background-color: $mint;
+    .container {
+      display: flex;
+      justify-content: center;
+    }
+    &-left {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 85vw;
+      max-width: 400px;
+      &-title {
+        font-size: 7rem;
+        font-family: 'La Parisienne';
+        font-weight: 400;
+        margin-bottom: 1rem;
+      }
+      &-subtitle {
+        font-family:'Choplin Extra Light';
+        font-size: 1.4rem;
+        letter-spacing: .2em;
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 3rem;
+      }
+      img {
+        width: 100%;
+        object-fit: cover;
+        border: 2rem solid $white;
+      }
+      p {
+        margin-top: 3rem;
+        font-family: 'Cabin';
+        font-size: 1.4rem;
+        line-height: 1.5;
+        letter-spacing: 0.04em;
+      }
+      a {
+        margin-top: 3rem;
+        display: block;
+        text-align: center;
+        font-family: 'Choplin Extra Light';
+        letter-spacing: .2em;
+        font-size: 1.4rem;
+        text-transform: uppercase;
+        background-color: $pink;
+        color: $white;
+        padding: .6em 1.2em;
       }
     }
   }
