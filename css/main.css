@@ -216,7 +216,7 @@ a:hover {
 .nav {
   z-index: 100;
   position: absolute;
-  top: 11rem;
+  top: 12.5rem;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
@@ -669,7 +669,10 @@ a:hover {
   font-weight: 400;
   font-style: italic;
   font-size: 2.1rem;
+<<<<<<< HEAD
   line-height: 1.5;
+=======
+>>>>>>> 5ea96b61e67d1e025c72c67758297f788a488d09
 }
 
 .opinion__section-box-signature {
