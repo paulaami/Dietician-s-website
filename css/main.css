@@ -107,6 +107,7 @@ ul {
 
 a {
   text-decoration: none;
+  color: #f58c7c;
 }
 
 a:hover {
@@ -666,6 +667,44 @@ a:hover {
   fill: #3b403f;
 }
 
+.footer__gallery .footer-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 1rem auto;
+}
+
+.footer__bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 3rem 1rem 2rem 1rem;
+}
+
+.footer__bottom p:first-of-type, .footer__bottom p:nth-of-type(2) {
+  -ms-flex-preferred-size: 49%;
+      flex-basis: 49%;
+}
+
+.footer__bottom p:nth-of-type(2) {
+  text-align: end;
+}
+
+.footer__bottom p:last-of-type {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  text-align: center;
+  margin-top: 2rem;
+}
+
 @media screen and (min-width: 375px) {
   .section__header-left {
     height: 50vh;
@@ -805,6 +844,41 @@ a:hover {
   }
   .opinion__section .slick-next {
     right: -40px;
+  }
+  .footer__gallery .last-box {
+    padding-left: 2rem;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .footer__gallery .last-box p {
+    font-size: 1.8rem;
+    text-align: left;
+    font-weight: 700;
+  }
+  .footer .footer-icons {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin: 1rem 0;
+  }
+  .footer__bottom {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .footer__bottom p {
+    font-size: 1.3rem;
+  }
+  .footer__bottom p:last-of-type, .footer__bottom p:first-of-type, .footer__bottom p:nth-last-of-type(2) {
+    margin: 0 1rem;
+    -ms-flex-preferred-size: auto;
+        flex-basis: auto;
   }
 }
 
