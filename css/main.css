@@ -8,11 +8,6 @@
   src: url("../assets/fonts/biko_regular.woff") format("woff");
 }
 
-@font-face {
-  font-family: "Choplin Extra Light";
-  src: url("../assets/fonts/choplin-extralight-demo.woff") format("woff");
-}
-
 @-webkit-keyframes flyApple {
   0% {
     -webkit-transform: translateY(0);
@@ -115,6 +110,50 @@ a:hover {
   transition: background-color 0.3s, color 0.3s;
 }
 
+.btn-style {
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+  font-family: "Rokkitt", serif;
+  letter-spacing: 0.2em;
+  font-size: 1.5rem;
+  width: 300px;
+  text-transform: uppercase;
+  background-color: #829f9f;
+  color: #fff;
+  padding: 0.7em 1.2em;
+}
+
+.btn-style:hover {
+  background-color: #96afaf;
+  color: #3b403f;
+}
+
+.heading-style {
+  line-height: 1.5;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #f58c7c;
+  font-family: "Rokkitt", serif;
+}
+
+.text-small {
+  font-family: "Cabin";
+  font-size: 1.6rem;
+  letter-spacing: 0.04em;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+.fancy-style {
+  font-family: "La Parisienne";
+  font-weight: 400;
+  letter-spacing: 0;
+  font-size: 8rem;
+  color: #3b403f;
+}
+
 .header {
   margin-top: 2em;
   margin-bottom: 7rem;
@@ -167,7 +206,7 @@ a:hover {
 
 .header__subtitle {
   font-size: 1.3rem;
-  color: #d38b87;
+  color: #f58c7c;
   letter-spacing: 0.3em;
   text-transform: uppercase;
   position: relative;
@@ -177,7 +216,7 @@ a:hover {
 .nav {
   z-index: 100;
   position: absolute;
-  top: 11rem;
+  top: 12.5rem;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
@@ -262,7 +301,7 @@ a:hover {
 }
 
 .nav__list-item a:hover {
-  color: #d38b87;
+  color: #f58c7c;
 }
 
 .nav__list-instagram {
@@ -371,10 +410,11 @@ a:hover {
 
 .section {
   /*ABOUT*/
+  /*WORK*/
 }
 
 .section__header {
-  min-height: 600px;
+  padding-bottom: 180px;
 }
 
 .section__header .container {
@@ -438,12 +478,10 @@ a:hover {
   text-transform: uppercase;
 }
 
-.section__header-center .header-last h3 {
-  font-family: "La Parisienne";
-  text-transform: none;
-  font-weight: 400;
+.section__header-center .header-last .fancy-style {
+  text-transform: lowercase;
   letter-spacing: 0;
-  font-size: 6rem;
+  font-size: 8rem;
 }
 
 .section__about {
@@ -479,17 +517,11 @@ a:hover {
 }
 
 .section__about-left-title {
-  font-size: 7rem;
-  font-family: "La Parisienne";
-  font-weight: 400;
   margin-bottom: 1rem;
 }
 
 .section__about-left-subtitle {
-  font-family: "Choplin Extra Light";
-  font-size: 1.4rem;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
+  font-family: "Rokkitt", serif;
   text-align: center;
   margin-bottom: 3rem;
 }
@@ -503,32 +535,70 @@ a:hover {
 
 .section__about-left p {
   margin-top: 3rem;
-  font-family: "Cabin";
-  font-size: 1.4rem;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
   text-align: center;
 }
 
 .section__about-left a {
   margin-top: 3rem;
-  display: block;
-  text-align: center;
-  font-family: "Choplin Extra Light";
-  letter-spacing: 0.2em;
-  font-size: 1.4rem;
-  text-transform: uppercase;
-  background-color: #f58c7c;
-  color: #fff;
-  padding: 0.6em 1.2em;
-}
-
-.section__about-left a:hover {
-  background-color: #f58c7c;
 }
 
 .section__about-right {
   display: none;
+}
+
+.section__work {
+  padding: 6rem 0;
+}
+
+.section__work .container {
+  width: 90vw;
+}
+
+.section__work-left {
+  display: none;
+}
+
+.section__work-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 1.6rem;
+}
+
+.section__work-right h2,
+.section__work-right h3 {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.section__work-right-box {
+  margin-bottom: 4rem;
+}
+
+.section__work-right-box .box-check {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 2rem;
+}
+
+.section__work-right-box .box-check p {
+  font-weight: 400;
+}
+
+.section__work-right-box .box-check svg {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  margin-right: 1rem;
+  width: 70px;
+  fill: #829f9f;
 }
 
 /* OPINION */
@@ -689,7 +759,8 @@ a:hover {
   padding: 3rem 1rem 2rem 1rem;
 }
 
-.footer__bottom p:first-of-type, .footer__bottom p:nth-of-type(2) {
+.footer__bottom p:first-of-type,
+.footer__bottom p:nth-of-type(2) {
   -ms-flex-preferred-size: 49%;
       flex-basis: 49%;
 }
@@ -758,7 +829,7 @@ a:hover {
     width: 95vw;
   }
   .section__header {
-    min-height: 430px;
+    padding-bottom: 10rem;
   }
   .section__header .container {
     display: -webkit-box;
@@ -819,6 +890,49 @@ a:hover {
     -o-object-fit: cover;
        object-fit: cover;
     border: 2rem solid #fbf2ec;
+  }
+  .section__work {
+    padding: 10rem 0;
+  }
+  .section__work .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .section__work-left {
+    display: block;
+    margin-right: 3rem;
+    width: 44%;
+    max-width: 420px;
+    position: relative;
+  }
+  .section__work-left::after {
+    position: absolute;
+    content: '';
+    background-color: #dfd8dc61;
+    top: -20%;
+    left: -20%;
+    height: 110%;
+    width: 95%;
+    z-index: -1;
+  }
+  .section__work-left img {
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .section__work-right {
+    width: 55%;
+    max-width: 700px;
+  }
+  .section__work-right-box .box-check svg {
+    width: 50px;
   }
   .opinion__section {
     background-attachment: fixed;
