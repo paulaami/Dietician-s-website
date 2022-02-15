@@ -6,13 +6,6 @@
 @font-face {
 	font-family: "Biko";
 	src: url("../assets/fonts/biko_regular.woff") format("woff");
-<<<<<<< HEAD
-=======
-}
-@font-face {
-	font-family: "Choplin Extra Light";
-	src: url("../assets/fonts/choplin-extralight-demo.woff") format("woff");
->>>>>>> 5ea96b61e67d1e025c72c67758297f788a488d09
 }
 
 @import "./colors";
@@ -52,7 +45,6 @@ ul {
 
 a {
 	text-decoration: none;
-<<<<<<< HEAD
 	color: $pink;
 	&:hover {
 		transition: background-color 0.3s, color 0.3s;
@@ -101,11 +93,6 @@ a {
 	letter-spacing: 0;
 	font-size: 8rem;
 	color: $main-grey;
-=======
-	&:hover {
-		transition: background-color 0.3s, color 0.3s;
-	}
->>>>>>> 5ea96b61e67d1e025c72c67758297f788a488d09
 }
 
 .header {
@@ -326,11 +313,7 @@ a {
 .section {
 	// HEADER
 	&__header {
-<<<<<<< HEAD
 		padding-bottom: 180px;
-=======
-		min-height: 600px;
->>>>>>> 5ea96b61e67d1e025c72c67758297f788a488d09
 		.container {
 			position: relative;
 		}
@@ -387,21 +370,12 @@ a {
 				text-transform: uppercase;
 			}
 
-<<<<<<< HEAD
 			.header-last {
 				.fancy-style {
 					text-transform: lowercase;
 					letter-spacing: 0;
 					font-size: 8rem;
 				}
-=======
-			.header-last h3 {
-				font-family: "La Parisienne";
-				text-transform: none;
-				font-weight: 400;
-				letter-spacing: 0;
-				font-size: 6rem;
->>>>>>> 5ea96b61e67d1e025c72c67758297f788a488d09
 			}
 		}
 	}
@@ -422,23 +396,10 @@ a {
 			width: 90vw;
 			max-width: 450px;
 			&-title {
-<<<<<<< HEAD
 				margin-bottom: 1rem;
 			}
 			&-subtitle {
 				font-family: "Rokkitt", serif;
-=======
-				font-size: 7rem;
-				font-family: "La Parisienne";
-				font-weight: 400;
-				margin-bottom: 1rem;
-			}
-			&-subtitle {
-				font-family: "Choplin Extra Light";
-				font-size: 1.4rem;
-				letter-spacing: 0.2em;
-				text-transform: uppercase;
->>>>>>> 5ea96b61e67d1e025c72c67758297f788a488d09
 				text-align: center;
 				margin-bottom: 3rem;
 			}
@@ -449,18 +410,10 @@ a {
 			}
 			p {
 				margin-top: 3rem;
-<<<<<<< HEAD
-=======
-				font-family: "Cabin";
-				font-size: 1.4rem;
-				line-height: 1.5;
-				letter-spacing: 0.04em;
->>>>>>> 5ea96b61e67d1e025c72c67758297f788a488d09
 				text-align: center;
 			}
 			a {
 				margin-top: 3rem;
-<<<<<<< HEAD
 			}
 		}
 		&-right {
@@ -508,26 +461,6 @@ a {
 				}
 			}
 		}
-=======
-				display: block;
-				text-align: center;
-				font-family: "Choplin Extra Light";
-				letter-spacing: 0.2em;
-				font-size: 1.4rem;
-				text-transform: uppercase;
-				background-color: $pink;
-				color: $white;
-				padding: 0.6em 1.2em;
-
-				&:hover {
-					background-color: $pink;
-				}
-			}
-		}
-		&-right {
-			display: none;
-		}
->>>>>>> 5ea96b61e67d1e025c72c67758297f788a488d09
 	}
 }
 
@@ -596,10 +529,7 @@ a {
 			font-weight: 400;
 			font-style: italic;
 			font-size: 2.1rem;
-<<<<<<< HEAD
       line-height: 1.5;
-=======
->>>>>>> 5ea96b61e67d1e025c72c67758297f788a488d09
 		}
 
 		&-signature {
@@ -649,7 +579,6 @@ a {
 				fill: $main-grey;
 			}
 		}
-<<<<<<< HEAD
 		.footer-icons {
 			display: flex;
 			margin: 1rem auto;
@@ -675,8 +604,6 @@ a {
 			text-align: center;
 			margin-top: 2rem;
 		}
-=======
->>>>>>> 5ea96b61e67d1e025c72c67758297f788a488d09
 	}
 }
 
@@ -743,11 +670,7 @@ a {
 		&-container {
 			position: fixed;
 			top: 0;
-<<<<<<< HEAD
 			right: 2rem;
-=======
-      right: 2rem;
->>>>>>> 5ea96b61e67d1e025c72c67758297f788a488d09
 			z-index: 100;
 		}
 	}
@@ -764,11 +687,7 @@ a {
 
 	.section {
 		&__header {
-<<<<<<< HEAD
       padding-bottom: 10rem;
-=======
-			min-height: 430px;
->>>>>>> 5ea96b61e67d1e025c72c67758297f788a488d09
 			.container {
 				display: flex;
 				justify-content: space-between;
@@ -828,7 +747,6 @@ a {
 				}
 			}
 		}
-<<<<<<< HEAD
 
 		&__work {
       padding: 10rem 0;
@@ -876,12 +794,6 @@ a {
 
 	.opinion__section {
 		background-attachment: fixed;
-=======
-	}
-
-	.opinion__section {
-    background-attachment: fixed;
->>>>>>> 5ea96b61e67d1e025c72c67758297f788a488d09
 		overflow: hidden;
 
 		&-container {
@@ -914,7 +826,6 @@ a {
 			right: -40px;
 		}
 	}
-<<<<<<< HEAD
 
 	.footer {
 		&__gallery {
@@ -949,8 +860,6 @@ a {
 			}
 		}
 	}
-=======
->>>>>>> 5ea96b61e67d1e025c72c67758297f788a488d09
 }
 
 @media screen and (min-width: 993px) {
