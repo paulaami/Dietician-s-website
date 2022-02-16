@@ -7,7 +7,7 @@
       font-size: 10rem;
     }
     &__subtitle {
-      font-size: 1.4rem; 
+      font-size: 1.4rem;
       top: 12px;
       margin-bottom: 2rem;
     }
@@ -77,6 +77,16 @@
   }
 
   .footer {
+    &__top {
+      &-link {
+        text-align: left;
+
+        .nav__icons {
+          justify-content: flex-start;
+          margin-left: -8px;
+        }
+      }
+    }
     &__gallery {
       &-box {
         width: 16.6%;
@@ -102,10 +112,74 @@
 }
 
 @media screen and (min-width: 1200px) {
-  .section {
-    &__work {
-      &-left {
+  .fav__section {
+    .timeline {
+      position: relative;
+      margin-bottom: 0;
+      height: 600px;
 
+      &-wrapper {
+        transform: scaleX(-1) rotate(90deg);
+        height: 100vw;
+      }
+
+      &-upper {
+        top: 13%;
+        left: -65px;
+        right: 1px;
+        height: 50%;
+      }
+
+      &-lower {
+        top: 35%;
+      }
+
+      &-event {
+        transform: rotate(-90deg) scaleX(-1);
+        padding: 0;
+
+        img {
+          width: 45px;
+          height: 45px;
+        }
+      }
+
+      &-event-first {
+        top: -76px;
+        left: -100px;
+      }
+
+      &-event-two {
+        top: 365px;
+        left: -125px;
+
+        img {
+          width: 50px;
+          height: 50px;
+        }
+      }
+
+      &-event-three {
+        top: -110px;
+        left: 145px;
+      }
+
+      &-event-four {
+        top: 340px;
+        left: 138px;
+
+        p:last-of-type {
+          margin-top: 13px;
+        }
+      }
+    }
+  }
+  .footer {
+    &__top {
+      &-logo {
+        display: block;
+        width: 10%;
+        align-self: flex-end;
       }
     }
   }

@@ -1,0 +1,31 @@
+@mixin img-style {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+
+@mixin text-style {
+  line-height: 1.5;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+}
+
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin background-image {
+  background-attachment: scroll;
+	background-position: center;
+	background-size: cover;
+	z-index: 0;
+}
+
+@mixin absolute-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
