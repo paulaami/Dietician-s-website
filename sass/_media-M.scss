@@ -5,15 +5,14 @@
 			font-size: 8rem;
 		}
 		.logo {
-			display: inline-block;
+			width: auto;
 		}
 	}
 
 	.nav {
+		position: fixed;
 		top: 1.5rem;
-		right: 0;
-		left: initial;
-		transform: initial;
+		right: 1.5rem;
 		// background-color: #ffffff99;
 		&__menu-text {
 			display: inline-block;
@@ -27,9 +26,10 @@
 	}
 
 	.navigation {
-		left: -50%;
+		right: 0;
+		left: auto;
+		transform: translateX(0);
 		top: 9rem;
-		max-width: 340px;
 	}
 
 	.container {
