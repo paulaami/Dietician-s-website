@@ -80,6 +80,8 @@ a {
 	height: 100%;
 	background-color: rgba(240, 243, 243, 0.6);
 	z-index: -1;
+	background-image: url("../assets/images/pexels-ella-olsson-1640770.jpg");
+	background-attachment: fixed;
 }
 
 .heading-style {
@@ -484,11 +486,11 @@ a {
 /* O P I N I O N */
 
 .opinion__section {
-	@include background-image;
+	// @include background-image;
 
 	position: relative;
 	padding: 7rem 0;
-	background-image: url("../assets/images/pexels-ella-olsson-1640770.jpg");
+	// background-image: url("../assets/images/pexels-ella-olsson-1640770.jpg");
 
 	&-header {
 		display: flex;

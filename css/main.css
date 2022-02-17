@@ -113,7 +113,7 @@ a:hover {
 
 .btn-style {
   line-height: 1.5;
-  letter-spacing: .2em;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
   margin: 0 auto;
   display: block;
@@ -140,11 +140,13 @@ a:hover {
   height: 100%;
   background-color: rgba(240, 243, 243, 0.6);
   z-index: -1;
+  background-image: url("../assets/images/pexels-ella-olsson-1640770.jpg");
+  background-attachment: fixed;
 }
 
 .heading-style {
   line-height: 1.5;
-  letter-spacing: .2em;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
   font-size: 2rem;
   color: #f58c7c;
@@ -479,7 +481,7 @@ a:hover {
 .section__header-center h3,
 .section__header-center a {
   line-height: 1.5;
-  letter-spacing: .2em;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
   position: absolute;
   top: 50%;
@@ -628,13 +630,8 @@ a:hover {
 
 /* O P I N I O N */
 .opinion__section {
-  background-attachment: scroll;
-  background-position: center;
-  background-size: cover;
-  z-index: 0;
   position: relative;
   padding: 7rem 0;
-  background-image: url("../assets/images/pexels-ella-olsson-1640770.jpg");
 }
 
 .opinion__section-header {
@@ -759,7 +756,7 @@ a:hover {
 
 .footer__gallery .last-box p {
   line-height: 1.5;
-  letter-spacing: .2em;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
   text-align: center;
   font-family: "Biko";
@@ -815,7 +812,7 @@ a:hover {
 
 .footer__top-link h4 {
   line-height: 1.5;
-  letter-spacing: .2em;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
   font-size: 1.7rem;
   color: #fff;
@@ -853,7 +850,7 @@ a:hover {
 
 .footer__top-arrow a {
   line-height: 1.5;
-  letter-spacing: .2em;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
   font-size: 1.3rem;
   color: #fff;
@@ -889,7 +886,7 @@ a:hover {
 
 .footer__top-form h3 {
   line-height: 1.5;
-  letter-spacing: .2em;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
 }
 
@@ -963,7 +960,7 @@ a:hover {
 .subtitle-about,
 .heading-about {
   line-height: 1.5;
-  letter-spacing: .2em;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
   font-weight: 400;
   letter-spacing: 0.1em;
@@ -992,7 +989,7 @@ a:hover {
 
 .section__aboutme-text h1 {
   line-height: 1.5;
-  letter-spacing: .2em;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
   font-size: 1.7rem;
 }
@@ -1003,7 +1000,7 @@ a:hover {
 
 .section__aboutme-text h2 {
   line-height: 1.5;
-  letter-spacing: .2em;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
   font-size: 4rem;
   font-family: "Rokkitt", serif;
@@ -1102,9 +1099,15 @@ a:hover {
 }
 
 .section__quote {
-  background-attachment: scroll;
+  position: fixed;
+  top: 0;
+  left: 0;
   background-position: center;
-  background-size: cover;
+  background-size: 150%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  width: 100%;
+  height: 150%;
   z-index: 0;
   position: relative;
   z-index: 0;
