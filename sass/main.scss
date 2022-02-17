@@ -162,7 +162,7 @@ a {
 .nav {
 	position: absolute;
 	top: 1rem;
-	right: 1rem;
+	right: 0;
 	width: 100vw;
 	z-index: 100;
 	&__menu {
@@ -297,6 +297,8 @@ a {
 	left: 50%;
 	transform: translateX(-50%);
 	top: 6.4rem;
+	right: 0;
+	margin: 0 auto;
 	width: 100vw;
 	max-width: 400px;
 	background-color: #333;
