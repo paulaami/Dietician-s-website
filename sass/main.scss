@@ -77,7 +77,7 @@ a {
   top: 0;
   left: 0;
   width: 100%;
-  height: 800px;
+  height: 100%;
   z-index: -2;
 	background-image: url("../assets/images/pexels-ella-olsson-1640770.jpg");
   background-attachment: scroll;
@@ -841,13 +841,14 @@ a {
       }
     }
     &-bottom {
-      &-left {
-        margin-bottom: 3rem;
-      }
-
+    
       &-left,
       &-right {
+        margin: 0 auto;
         max-width: 335px;
+      }
+      &-left {
+        margin-bottom: 3rem;
       }
     }
   }
@@ -894,12 +895,13 @@ a {
   // Q U O T E
 
   &__quote {
-    @include background-image;
-
     position: relative;
     z-index: 0;
     padding: 7rem 0;
-    background-image: url("../assets/images/background-big.jpg");
+    overflow: hidden;
+    .shadow-bg {
+      background-image: url("../assets/images/background-big.jpg");
+    }
 
     &-box {
       display: flex;

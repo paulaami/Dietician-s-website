@@ -22,8 +22,8 @@ $(document).ready(function () {
 
   //ZROB TO DO MOBILE TYLKO
 
-  $(window).scroll(function () {
-    var scrolledY = $(window).scrollTop() - 300;
-    $(".shadow-bg").css({ "background-position-y": scrolledY + "px" });
-  });
+//   $(window).scroll(function () {
+//     var scrolledY = $(window).scrollTop() - 300;
+//     $(".shadow-bg").css({ "background-position-y": scrolledY + "px" });
+//   });
 });
