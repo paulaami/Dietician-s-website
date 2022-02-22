@@ -586,8 +586,9 @@ a:hover {
   width: 90vw;
 }
 
-.section__work-left {
-  display: none;
+.section__work-left img {
+  text-align: center;
+  width: 100%;
 }
 
 .section__work-right {
@@ -635,6 +636,71 @@ a:hover {
   margin-right: 1rem;
   width: 70px;
   fill: #829f9f;
+}
+
+.services .section__work {
+  padding-top: 0rem;
+}
+
+.services .section__work-left {
+  margin-bottom: 3rem;
+}
+
+.services .section__work-left::after {
+  display: none;
+}
+
+.single {
+  padding: 8rem 0 5rem 0;
+}
+
+.section__motivation h2 {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.section__motivation-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.section__motivation-wrapper-box {
+  margin: 0 1rem 3.5rem 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 3rem;
+  width: 290px;
+  height: 290px;
+  background-color: #F0F3F3;
+}
+
+.section__motivation-wrapper-box img {
+  display: block;
+  margin-bottom: 2rem;
+  -webkit-filter: invert(85%) sepia(13%) saturate(157%) hue-rotate(154deg) brightness(91%) contrast(89%);
+          filter: invert(85%) sepia(13%) saturate(157%) hue-rotate(154deg) brightness(91%) contrast(89%);
+}
+
+.section__motivation-wrapper-box .text-small {
+  text-align: center;
 }
 
 /* O P I N I O N */
@@ -694,12 +760,14 @@ a:hover {
   font-style: italic;
   font-size: 2.1rem;
   line-height: 1.5;
+  color: #fff;
 }
 
 .opinion__section-box-signature {
   text-align: center;
   font-family: "La Parisienne";
   font-size: 6rem;
+  color: #fff;
 }
 
 .footer {
@@ -1048,13 +1116,18 @@ a:hover {
   margin-bottom: 3rem;
 }
 
-.section__info-bottom-left, .section__info-bottom-right {
+.section__info-bottom-left {
   margin: 0 auto;
-  max-width: 335px;
+  margin-bottom: 3rem;
 }
 
-.section__info-bottom-left {
-  margin-bottom: 3rem;
+.section__info-bottom-left .text-small {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.section__info-bottom-left .btn-style {
+  margin-top: 5rem;
 }
 
 .section__hobby {
@@ -1079,35 +1152,50 @@ a:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .section__hobby-container-box {
-  max-width: 230px;
+  max-width: 350px;
   text-align: center;
+  margin-bottom: 4rem;
 }
 
-.section__hobby-container-box svg {
+.section__hobby-container-box img {
   display: block;
   margin: 0 auto;
   margin-bottom: 2rem;
-  width: 55px;
-  height: 55px;
 }
 
-.section__hobby-container-box .svg-one {
-  fill: #f58c7c;
+.section__hobby-container-box .img-one {
+  -webkit-filter: invert(73%) sepia(23%) saturate(690%) hue-rotate(43deg) brightness(89%) contrast(88%);
+          filter: invert(73%) sepia(23%) saturate(690%) hue-rotate(43deg) brightness(89%) contrast(88%);
 }
 
-.section__hobby-container-box .svg-two {
-  fill: #829f9f;
+.section__hobby-container-box .img-two {
+  -webkit-filter: invert(23%) sepia(11%) saturate(247%) hue-rotate(118deg) brightness(91%) contrast(89%);
+          filter: invert(23%) sepia(11%) saturate(247%) hue-rotate(118deg) brightness(91%) contrast(89%);
 }
 
-.section__hobby-container-box .svg-three {
-  fill: #f7d989;
+.section__hobby-container-box .img-three {
+  -webkit-filter: invert(74%) sepia(28%) saturate(3964%) hue-rotate(313deg) brightness(109%) contrast(92%);
+          filter: invert(74%) sepia(28%) saturate(3964%) hue-rotate(313deg) brightness(109%) contrast(92%);
 }
 
-.section__hobby-container-box .svg-four {
-  fill: #fadcd2;
+.section__hobby-container-box .img-four {
+  -webkit-filter: invert(69%) sepia(14%) saturate(730%) hue-rotate(132deg) brightness(95%) contrast(92%);
+          filter: invert(69%) sepia(14%) saturate(730%) hue-rotate(132deg) brightness(95%) contrast(92%);
+}
+
+.section__hobby-container-box .img-five {
+  -webkit-filter: invert(89%) sepia(13%) saturate(1365%) hue-rotate(342deg) brightness(102%) contrast(94%);
+          filter: invert(89%) sepia(13%) saturate(1365%) hue-rotate(342deg) brightness(102%) contrast(94%);
+}
+
+.section__hobby-container-box .img-six {
+  -webkit-filter: invert(39%) sepia(4%) saturate(4407%) hue-rotate(210deg) brightness(89%) contrast(76%);
+          filter: invert(39%) sepia(4%) saturate(4407%) hue-rotate(210deg) brightness(89%) contrast(76%);
 }
 
 .section__quote {
@@ -1229,14 +1317,14 @@ a:hover {
 }
 
 .fav__section-box:nth-child(2) {
-  background-image: url("../assets/images/1.jpg");
+  background-image: url("../assets/images/pizza.jpg");
   -webkit-box-ordinal-group: 3;
       -ms-flex-order: 2;
           order: 2;
 }
 
 .fav__section-box:nth-child(3) {
-  background-image: url("../assets/images/2.jpg");
+  background-image: url("../assets/images/music2.jpg");
   -webkit-box-ordinal-group: 4;
       -ms-flex-order: 3;
           order: 3;
@@ -1255,14 +1343,14 @@ a:hover {
 }
 
 .fav__section-box:nth-child(6) {
-  background-image: url("../assets/images/3.jpg");
+  background-image: url("../assets/images/peonies.jpg");
   -webkit-box-ordinal-group: 7;
       -ms-flex-order: 6;
           order: 6;
 }
 
 .fav__section-box:nth-child(7) {
-  background-image: url("../assets/images/friends.gif");
+  background-image: url("../assets/gif/peaky-boys.gif");
   -webkit-box-ordinal-group: 8;
       -ms-flex-order: 7;
           order: 7;
@@ -1281,14 +1369,14 @@ a:hover {
 }
 
 .fav__section-box:nth-child(10) {
-  background-image: url("../assets/images/4.png");
+  background-image: url("../assets/images/book.jpg");
   -webkit-box-ordinal-group: 11;
       -ms-flex-order: 10;
           order: 10;
 }
 
 .fav__section-box:nth-child(11) {
-  background-image: url("../assets/images/6.png");
+  background-image: url("../assets/images/summer.jpg");
   -webkit-box-ordinal-group: 12;
       -ms-flex-order: 11;
           order: 11;
@@ -1514,10 +1602,10 @@ a:hover {
        object-fit: cover;
     border: 2rem solid #fbf2ec;
   }
-  .section__work {
+  .home .section__work {
     padding: 10rem 0;
   }
-  .section__work .container {
+  .home .section__work .container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1528,14 +1616,14 @@ a:hover {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .section__work-left {
+  .home .section__work-left {
     display: block;
     margin-right: 3rem;
     width: 44%;
     max-width: 460px;
     position: relative;
   }
-  .section__work-left::after {
+  .home .section__work-left::after {
     position: absolute;
     content: "";
     background-color: #dfd8dc61;
@@ -1545,17 +1633,17 @@ a:hover {
     width: 95%;
     z-index: -1;
   }
-  .section__work-left img {
+  .home .section__work-left img {
     width: 100%;
     -o-object-fit: cover;
        object-fit: cover;
   }
-  .section__work-right {
+  .home .section__work-right {
     width: 55%;
     padding: 0 2rem;
     max-width: 620px;
   }
-  .section__work-right-box .box-check svg {
+  .home .section__work-right-box .box-check svg {
     width: 50px;
   }
   .opinion__section .shadow-bg {
@@ -1670,9 +1758,13 @@ a:hover {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
   .section__hobby-container-box {
-    width: 16%;
+    padding: 0 1rem;
+    width: 50%;
   }
   .section__quote {
     padding: 10rem 0;
@@ -1858,6 +1950,70 @@ a:hover {
     -webkit-box-ordinal-group: 7;
         -ms-flex-order: 6;
             order: 6;
+  }
+  .services .section__work {
+    padding: 10rem 0;
+  }
+  .services .section__work h2 {
+    color: #3b403f;
+  }
+  .services .section__work .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .services .section__work-left {
+    display: block;
+    margin-right: 3rem;
+    width: 44%;
+    max-width: 460px;
+    position: relative;
+  }
+  .services .section__work-left img {
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .services .section__work-right {
+    width: 55%;
+    padding: 0 2rem;
+    max-width: 620px;
+  }
+  .services .section__work-right-box .box-check svg {
+    width: 50px;
+  }
+  .services .section__work .longterm h2,
+  .services .section__work .single h2 {
+    color: #829f9f;
+  }
+  .services .section__work .longterm .section__work-right {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .services .section__work .single .section__work-right {
+    padding-left: 0;
+    padding-right: 4rem;
+  }
+  .section__motivation-wrapper {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    max-width: 1140px;
+  }
+  .section__motivation-wrapper-box {
+    width: 340px;
+    height: 300px;
+  }
+  .section__motivation-wrapper-box img {
+    width: 75px;
+    height: 75px;
   }
 }
 
