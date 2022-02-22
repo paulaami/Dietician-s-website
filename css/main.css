@@ -783,6 +783,7 @@ a:hover {
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+  text-align: center;
 }
 
 .footer__gallery {
