@@ -265,6 +265,7 @@ a:hover {
   text-transform: uppercase;
   -webkit-transform: rotate(-90deg);
           transform: rotate(-90deg);
+  color: #3b403f;
 }
 
 .nav__menu-box {
