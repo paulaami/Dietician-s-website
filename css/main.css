@@ -730,13 +730,14 @@ a:hover {
   text-align: center;
 }
 
-.section__motivation .success-wrapper {
+.success-wrapper {
   margin-top: 4rem;
   padding: 3rem;
   background-color: #f58c7c;
+  color: #fff;
 }
 
-.section__motivation .success-wrapper h3 {
+.success-wrapper h3 {
   text-align: center;
   letter-spacing: .1em;
   font-size: 2.4rem;
@@ -745,10 +746,51 @@ a:hover {
   line-height: 1.5;
 }
 
-.section__motivation .success-wrapper h3:last-of-type {
+.success-wrapper h3:last-of-type {
   margin-top: 3rem;
   font-size: 2rem;
   letter-spacing: .05em;
+}
+
+.success-wrapper .text-small {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.success-wrapper .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.success-wrapper-box {
+  margin: 2rem;
+  width: 240px;
+}
+
+.success-wrapper-box-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 230px;
+  text-align: center;
+  height: 100px;
+}
+
+.success-wrapper-box-text .counter {
+  font-size: 3rem;
 }
 
 /* O P I N I O N */
@@ -1692,7 +1734,7 @@ a:hover {
     border: 2rem solid #fbf2ec;
   }
   .home .section__work {
-    padding: 10rem 0;
+    padding: 20rem 0;
   }
   .home .section__work .container {
     display: -webkit-box;
