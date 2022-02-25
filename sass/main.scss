@@ -507,6 +507,10 @@ a {
 .services {
   .section__work {
     padding-top: 0rem;
+
+				&-main {
+					max-width: 300px;
+				}
     .work-icon {
       width: 50px;
       margin: 0 auto;
@@ -576,7 +580,7 @@ p {
   }
 
 		.success-wrapper {
-			margin-top: 2rem;
+			margin-top: 4rem;
 			padding: 3rem;
 			background-color: $dark-beige;
 			h3 {

@@ -644,6 +644,10 @@ a:hover {
   padding-top: 0rem;
 }
 
+.services .section__work-main {
+  max-width: 300px;
+}
+
 .services .section__work .work-icon {
   width: 50px;
   margin: 0 auto;
@@ -727,7 +731,7 @@ a:hover {
 }
 
 .section__motivation .success-wrapper {
-  margin-top: 2rem;
+  margin-top: 4rem;
   padding: 3rem;
   background-color: #f58c7c;
 }
@@ -1731,6 +1735,24 @@ a:hover {
   .home .section__work-right-box .box-check svg {
     width: 50px;
   }
+  .container-work {
+    padding-top: 6rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .container-work .section__work-right {
+    margin-left: 2rem;
+  }
+  .container-work .section__work-right-box .box-check p {
+    max-width: 300px;
+  }
+  .container-work .section__work-right-box .box-check svg {
+    width: 50px;
+    height: 50px;
+  }
   .opinion__section .shadow-bg {
     background-attachment: fixed;
     background-size: cover;
@@ -1934,7 +1956,7 @@ a:hover {
 
 @media screen and (min-width: 993px) {
   .heading-style {
-    font-size: 2.3rem;
+    font-size: 3rem;
   }
   .header__title {
     font-size: 10rem;
@@ -2036,11 +2058,27 @@ a:hover {
         -ms-flex-order: 6;
             order: 6;
   }
+  .container-work {
+    padding-top: 0;
+    padding-bottom: 6rem;
+  }
+  .container-work .section__work-right {
+    margin-left: 0;
+  }
+  .container-work .section__work-right-box .box-check p {
+    max-width: 450px;
+  }
+  .container-work .section__work-right-box .box-check svg {
+    width: 50px;
+    height: 50px;
+  }
   .services .section__work {
     padding: 10rem 0;
   }
   .services .section__work h2 {
     color: #3b403f;
+    font-size: 2.8rem;
+    line-height: 1.3;
   }
   .services .section__work .container {
     display: -webkit-box;
@@ -2092,6 +2130,9 @@ a:hover {
     padding-left: 0;
     padding-right: 4rem;
   }
+  .section__motivation h2 {
+    margin-bottom: 6rem;
+  }
   .section__motivation-wrapper {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
@@ -2105,6 +2146,9 @@ a:hover {
   .section__motivation-wrapper-box img {
     width: 75px;
     height: 75px;
+  }
+  .section__motivation .success-wrapper {
+    margin-top: 8rem;
   }
 }
 

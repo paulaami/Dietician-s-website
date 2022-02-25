@@ -144,6 +144,27 @@
     }
   }
 
+  .container-work {
+    padding-top: 6rem;
+    display: flex;
+    justify-content: space-around;
+
+    .section__work-right {
+      margin-left: 2rem;
+    }
+    .section__work-right-box {
+      .box-check {
+        p {
+          max-width: 300px;
+        }
+        svg {
+          width: 50px;
+          height: 50px;
+        }
+      }
+    }
+  }
+
   .opinion__section {
     .shadow-bg {
       background-attachment: fixed;
@@ -270,10 +291,10 @@
     &__quote {
       padding: 10rem 0;
       .shadow-bg {
-							background-attachment: fixed;
-							background-size: cover;
-							background-repeat: no-repeat;
-					}
+        background-attachment: fixed;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
     }
   }
 
