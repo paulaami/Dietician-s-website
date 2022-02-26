@@ -110,33 +110,33 @@
     }
   }
 
-		.container-work {
-			padding-top: 0;
-			padding-bottom: 6rem;
- 
-			.section__work-right {
-					margin-left: 0;
-			}
-			.section__work-right-box {
-					.box-check {
-							p {
-									max-width: 450px;
-							}
-							svg {
-									width: 50px;
-									height: 50px;
-							}
-					}
-			}
-	}
+  .container-work {
+    padding-top: 0;
+    padding-bottom: 6rem;
+
+    .section__work-right {
+      margin-left: 0;
+    }
+    .section__work-right-box {
+      .box-check {
+        p {
+          max-width: 450px;
+        }
+        svg {
+          width: 50px;
+          height: 50px;
+        }
+      }
+    }
+  }
 
   .services .section__work {
     padding: 10rem 0;
 
     h2 {
       color: $main-grey;
-						font-size: 2.8rem;
-						line-height: 1.3;
+      font-size: 2.8rem;
+      line-height: 1.3;
     }
     .container {
       display: flex;
@@ -194,9 +194,9 @@
   }
 
   .section__motivation {
-			h2 {
-				margin-bottom: 6rem;
-			}
+    h2 {
+      margin-bottom: 6rem;
+    }
     &-wrapper {
       justify-content: space-between;
       max-width: 1140px;
@@ -210,9 +210,22 @@
       }
     }
 
-				.success-wrapper {
-					margin-top: 8rem;
+    .success-wrapper {
+      margin-top: 8rem;
+    }
+  }
+
+  .services .section__hobby {
+			&-container {
+				justify-content: space-between;
+				&-box {
+					max-width: 530px;
+					margin-bottom: 4rem;
 				}
+			}
+    .heading-style {
+      font-size: 2rem;
+    }
   }
 }
 

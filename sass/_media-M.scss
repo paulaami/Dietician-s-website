@@ -298,6 +298,47 @@
     }
   }
 
+  .services .section__hobby {
+    padding: 10rem 0;
+    &-container {
+      justify-content: center;
+      &-box {
+        width: 60%;
+        max-width: 500px;
+      }
+    }
+  }
+
+  .services__contact {
+    padding: 1rem 0 6rem 0;
+    .container {
+      &-wrapper {
+        max-width: 900px;
+        justify-content: space-between;
+
+        img {
+          width: 45%;
+        }
+
+        &-text {
+          margin-left: 2rem;
+          width: 50%;
+          h3 {
+            font-size: 2rem;
+          }
+
+          p {
+            margin-bottom: 3rem;
+          }
+          a {
+            background-color: $yellow;
+            color: $main-grey;
+          }
+        }
+      }
+    }
+  }
+
   .fav__section {
     padding: 8rem 0;
     &-box {

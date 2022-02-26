@@ -488,7 +488,7 @@ a {
           margin-bottom: 2rem;
           p {
             font-weight: 400;
-												max-width: 490px;
+            max-width: 490px;
           }
           svg {
             align-self: flex-start;
@@ -508,9 +508,9 @@ a {
   .section__work {
     padding-top: 0rem;
 
-				&-main {
-					max-width: 300px;
-				}
+    &-main {
+      max-width: 300px;
+    }
     .work-icon {
       width: 50px;
       margin: 0 auto;
@@ -534,15 +534,16 @@ a {
   padding: 8rem 0 5rem 0;
 }
 
-.single, .longterm {
-	.section__work-right {
-		margin-bottom: 4rem;
-}
+.single,
+.longterm {
+  .section__work-right {
+    margin-bottom: 4rem;
+  }
 
-p {
-	margin-bottom: 1rem;
-	line-height: 1.5;
-}
+  p {
+    margin-bottom: 1rem;
+    line-height: 1.5;
+  }
 }
 
 .section__motivation {
@@ -578,56 +579,55 @@ p {
       }
     }
   }
+}
 
-	}
+.success-wrapper {
+  margin-top: 4rem;
+  padding: 3rem;
+  background-color: $dark-beige;
+  color: $white;
+  h3 {
+    text-align: center;
+    letter-spacing: 0.1em;
+    font-size: 2.4rem;
+    color: $white;
+    text-transform: uppercase;
+    line-height: 1.5;
 
-	.success-wrapper {
-		margin-top: 4rem;
-		padding: 3rem;
-		background-color: $dark-beige;
-		color: $white;
-		h3 {
-			text-align: center;
-			letter-spacing: .1em;
-			font-size: 2.4rem;
-			color: $white;
-			text-transform: uppercase;
-			line-height: 1.5;
+    &:last-of-type {
+      margin-top: 3rem;
+      font-size: 2rem;
+      letter-spacing: 0.05em;
+    }
+  }
 
-			&:last-of-type {
-				margin-top: 3rem;
-				font-size: 2rem;
-				letter-spacing: .05em;
-			}
-		}
+  .text-small {
+    text-transform: uppercase;
+    text-align: center;
+  }
 
-		.text-small {
-			text-transform: uppercase;
-			text-align: center;
-		}
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  &-box {
+    margin: 2rem;
+    width: 240px;
+    &-text {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      max-width: 230px;
+      text-align: center;
+      height: 100px;
 
-		.container {
-			display: flex;
-			flex-wrap: wrap;
-			justify-content: center;
-		}
-		&-box {
-			margin: 2rem;
-			width: 240px;
-			&-text {
-				display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-				max-width: 230px;
-				text-align: center;
-				height: 100px;
-
-				.counter {
-					font-size: 3rem;
-				}
-			}
-		}
-	}
+      .counter {
+        font-size: 3rem;
+      }
+    }
+  }
+}
 
 /* O P I N I O N */
 
@@ -698,24 +698,24 @@ p {
 }
 
 .section__clients {
-	padding: 8rem 0;
-	.container {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-	}
-	&-box {
-		max-width: 400px;
-		margin-bottom: 5rem;
-		img {
-			width: 100%;
-			height: auto;
-			max-width: 400px;
-			max-height: 400px;
-			margin-bottom: 2rem;
-		}
-	}
+  padding: 8rem 0;
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  &-box {
+    max-width: 400px;
+    margin-bottom: 5rem;
+    img {
+      width: 100%;
+      height: auto;
+      max-width: 400px;
+      max-height: 400px;
+      margin-bottom: 2rem;
+    }
+  }
 }
 
 .footer {
@@ -1109,6 +1109,80 @@ p {
         height: 70px;
         filter: invert(100%) sepia(4%) saturate(335%) hue-rotate(132deg)
           brightness(99%) contrast(92%);
+      }
+    }
+  }
+}
+
+.services .section__quote {
+  &-box {
+    background: transparent;
+    &-text-heading {
+      line-height: 1.5;
+      text-transform: none;
+      font-size: 1.4rem;
+    }
+  }
+  h2,
+  p {
+    color: $white;
+  }
+
+  .heading-style {
+    margin: 2rem auto;
+  }
+}
+
+.services .section__hobby {
+  padding: 7rem 0;
+  &-container {
+    &-box {
+      margin: 1rem;
+      margin-bottom: 3rem;
+      max-width: 400px;
+      text-align: left;
+
+      .heading-style {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}
+
+.services__contact {
+	padding: 1rem 0 6rem 0;
+  .container {
+    &-wrapper {
+      margin: 0 auto;
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						flex-wrap: wrap;
+
+      img {
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+        max-width: 400px;
+      }
+
+      &-text {
+							margin-top: 5rem;
+							max-width: 400px;
+        h3 {
+          font-size: 2rem;
+          letter-spacing: 0.1em;
+          margin-bottom: 3rem;
+        }
+
+        p {
+          // font-size: 1.4rem;
+										margin-bottom: 3rem;
+        }
+								a {
+									background-color: $yellow;
+									color: $main-grey;
+								}
       }
     }
   }

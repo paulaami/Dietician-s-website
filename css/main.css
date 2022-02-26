@@ -672,11 +672,13 @@ a:hover {
   padding: 8rem 0 5rem 0;
 }
 
-.single .section__work-right, .longterm .section__work-right {
+.single .section__work-right,
+.longterm .section__work-right {
   margin-bottom: 4rem;
 }
 
-.single p, .longterm p {
+.single p,
+.longterm p {
   margin-bottom: 1rem;
   line-height: 1.5;
 }
@@ -739,7 +741,7 @@ a:hover {
 
 .success-wrapper h3 {
   text-align: center;
-  letter-spacing: .1em;
+  letter-spacing: 0.1em;
   font-size: 2.4rem;
   color: #fff;
   text-transform: uppercase;
@@ -749,7 +751,7 @@ a:hover {
 .success-wrapper h3:last-of-type {
   margin-top: 3rem;
   font-size: 2rem;
-  letter-spacing: .05em;
+  letter-spacing: 0.05em;
 }
 
 .success-wrapper .text-small {
@@ -1371,6 +1373,86 @@ a:hover {
           filter: invert(100%) sepia(4%) saturate(335%) hue-rotate(132deg) brightness(99%) contrast(92%);
 }
 
+.services .section__quote-box {
+  background: transparent;
+}
+
+.services .section__quote-box-text-heading {
+  line-height: 1.5;
+  text-transform: none;
+  font-size: 1.4rem;
+}
+
+.services .section__quote h2,
+.services .section__quote p {
+  color: #fff;
+}
+
+.services .section__quote .heading-style {
+  margin: 2rem auto;
+}
+
+.services .section__hobby {
+  padding: 7rem 0;
+}
+
+.services .section__hobby-container-box {
+  margin: 1rem;
+  margin-bottom: 3rem;
+  max-width: 400px;
+  text-align: left;
+}
+
+.services .section__hobby-container-box .heading-style {
+  margin-bottom: 1rem;
+}
+
+.services__contact {
+  padding: 1rem 0 6rem 0;
+}
+
+.services__contact .container-wrapper {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.services__contact .container-wrapper img {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 400px;
+}
+
+.services__contact .container-wrapper-text {
+  margin-top: 5rem;
+  max-width: 400px;
+}
+
+.services__contact .container-wrapper-text h3 {
+  font-size: 2rem;
+  letter-spacing: 0.1em;
+  margin-bottom: 3rem;
+}
+
+.services__contact .container-wrapper-text p {
+  margin-bottom: 3rem;
+}
+
+.services__contact .container-wrapper-text a {
+  background-color: #f7d989;
+  color: #3b403f;
+}
+
 .fav__section {
   padding: 6rem 0;
 }
@@ -1923,6 +2005,44 @@ a:hover {
     background-size: cover;
     background-repeat: no-repeat;
   }
+  .services .section__hobby {
+    padding: 10rem 0;
+  }
+  .services .section__hobby-container {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .services .section__hobby-container-box {
+    width: 60%;
+    max-width: 500px;
+  }
+  .services__contact {
+    padding: 1rem 0 6rem 0;
+  }
+  .services__contact .container-wrapper {
+    max-width: 900px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .services__contact .container-wrapper img {
+    width: 45%;
+  }
+  .services__contact .container-wrapper-text {
+    margin-left: 2rem;
+    width: 50%;
+  }
+  .services__contact .container-wrapper-text h3 {
+    font-size: 2rem;
+  }
+  .services__contact .container-wrapper-text p {
+    margin-bottom: 3rem;
+  }
+  .services__contact .container-wrapper-text a {
+    background-color: #f7d989;
+    color: #3b403f;
+  }
   .fav__section {
     padding: 8rem 0;
   }
@@ -2191,6 +2311,18 @@ a:hover {
   }
   .section__motivation .success-wrapper {
     margin-top: 8rem;
+  }
+  .services .section__hobby-container {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .services .section__hobby-container-box {
+    max-width: 530px;
+    margin-bottom: 4rem;
+  }
+  .services .section__hobby .heading-style {
+    font-size: 2rem;
   }
 }
 
