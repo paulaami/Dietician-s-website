@@ -22,7 +22,7 @@
       }
       &-center {
         padding: 3rem;
-        max-width: 545px;
+        max-width: 725px;
         left: 64%;
         top: 52%;
         h3 {
@@ -36,16 +36,62 @@
       }
     }
 
-    &__about {
-      padding: 8rem 0;
-      &-left {
-        margin-right: 8rem;
-        &-title {
-          margin-bottom: 0;
-          font-size: 12rem;
+    &__info {
+      &-top {
+        margin-bottom: 8rem;
+        &::after {
+          bottom: -3.5rem;
+        }
+      }
+      &-bottom {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        max-width: 1100px;
+
+        &-right, &-left {
+          margin: 1rem;
+          width: 49%;
+          max-width: 500px;
         }
       }
     }
+
+    // &__about {
+    //   padding: 8rem 0;
+    //   background-color: $white;
+    //   &-left {
+    //     width: 50%;
+    //     margin-right: 8rem;
+    //     &-title {
+    //       margin-bottom: 0;
+    //       font-size: 12rem;
+    //     }
+    //     &-subtitle {
+    //       color: $pink;
+    //     }
+    //     img {
+    //       display: none;
+    //     }
+    //     p {
+    //       margin-top: 0;
+    //     }
+    //     a {
+    //       color: $main-grey;
+    //       background-color: $light-beige;
+    //     }
+    //   }
+    //   &-right {
+    //     display: block;
+    //     width: 43%;
+    //     max-width: 500px;
+    //     img {
+    //       width: 100%;
+    //       object-fit: cover;
+    //       border: 2rem solid $light-beige;
+    //     }
+    //   }
+    // }
   }
   .navigation {
     max-width: 400px;
@@ -216,13 +262,13 @@
   }
 
   .services .section__hobby {
-			&-container {
-				justify-content: space-between;
-				&-box {
-					max-width: 530px;
-					margin-bottom: 4rem;
-				}
-			}
+    &-container {
+      justify-content: space-between;
+      &-box {
+        max-width: 530px;
+        margin-bottom: 4rem;
+      }
+    }
     .heading-style {
       font-size: 2rem;
     }
@@ -230,6 +276,56 @@
 }
 
 @media screen and (min-width: 1200px) {
+  .section__about {
+    padding: 8rem 0;
+    background-color: $white;
+
+    // .container {
+    //   width: 100vw;
+    // }
+
+    &-left {
+      width: 50%;
+      max-width: 570px;
+      margin-right: 8rem;
+      &-title {
+        margin-bottom: 0;
+        font-size: 12rem;
+      }
+      &-subtitle {
+        margin-top: -1rem;
+        margin-bottom: 1rem;
+        color: $pink;
+      }
+      img {
+        display: none;
+      }
+      p {
+        margin-top: 0;
+        margin-bottom: 0.6rem;
+      }
+    }
+    &-right {
+      display: block;
+      width: 43%;
+      max-width: 500px;
+      img {
+        width: 100%;
+        object-fit: cover;
+        border: 2rem solid $light-beige;
+      }
+    }
+    
+    &-list {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    a {
+      color: $main-grey;
+      background-color: $light-beige;
+    }
+  }
+
   .fav__section {
     .timeline {
       position: relative;

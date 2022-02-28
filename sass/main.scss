@@ -371,7 +371,7 @@ a {
       // padding: 2rem;
       background-color: transparent;
       width: 95vw;
-      max-width: 400px;
+      max-width: 450px;
 
       &-box {
         position: relative;
@@ -391,7 +391,7 @@ a {
       }
 
       h3 {
-        font-size: 1.8rem;
+        font-size: 1.6rem;
       }
       a {
         display: block;
@@ -404,7 +404,7 @@ a {
         .fancy-style {
           text-transform: lowercase;
           letter-spacing: 0;
-          font-size: 8rem;
+          font-size: 7rem;
         }
       }
     }
@@ -412,7 +412,8 @@ a {
 
   /* A B O U T */
   &__about {
-    padding: 5rem 0;
+    margin-top: 5rem;
+    padding: 6rem 0;
     background-color: $mint;
     .container {
       display: flex;
@@ -421,12 +422,15 @@ a {
     &-left {
       @include flex-center;
 
+      align-items: flex-start;
+
       flex-direction: column;
 
       width: 90vw;
       max-width: 450px;
       &-title {
         margin-bottom: 1rem;
+        text-align: center;
       }
       &-subtitle {
         font-family: "Rokkitt", serif;
@@ -439,13 +443,38 @@ a {
       }
       p {
         margin-top: 3rem;
+        text-align: left;
       }
       a {
         margin-top: 3rem;
       }
     }
+    span {
+      font-weight: 600;
+    }
     &-right {
       display: none;
+    }
+
+    &-list {
+      margin: 1rem 0 2rem 0;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+
+      ul {
+        list-style-type: disc;
+        list-style-position: inside;
+
+        li {
+          font-size: 1.6rem;
+          margin-bottom: 0.5rem;
+        }
+      }
+    }
+
+    .btn-style {
+      margin-top: 6rem;
     }
   }
 
@@ -466,6 +495,7 @@ a {
       }
     }
     &-right {
+      margin-top: 3rem;
       display: flex;
       flex-direction: column;
       font-size: 1.6rem;
@@ -620,10 +650,18 @@ a {
       justify-content: space-between;
       max-width: 230px;
       text-align: center;
-      height: 100px;
+      height: 170px;
 
       .counter {
         font-size: 3rem;
+      }
+
+      img {
+        width: 60px;
+        text-align: center;
+        margin: 0 auto;
+        filter: invert(97%) sepia(85%) saturate(380%) hue-rotate(296deg)
+          brightness(105%) contrast(97%);
       }
     }
   }
@@ -1000,18 +1038,20 @@ a {
     }
     &-bottom {
       &-left {
-        margin: 0 auto;
         margin-bottom: 3rem;
 
-        .text-small {
-          text-align: center;
-          margin-bottom: 2rem;
-        }
-
-        .btn-style {
-          margin-top: 5rem;
-        }
+        
       }
+    }
+    .btn-style {
+      margin-top: 5rem;
+    }
+    .text-small {
+      margin-bottom: 1rem;
+    }
+    span {
+      font-weight: 600;
+      font-style: italic;
     }
   }
 
@@ -1028,9 +1068,10 @@ a {
 
       flex-direction: column;
       flex-wrap: wrap;
+      max-width: 900px;
 
       &-box {
-        max-width: 350px;
+        max-width: 380px;
         text-align: center;
         margin-bottom: 4rem;
 
@@ -1067,6 +1108,10 @@ a {
             brightness(89%) contrast(76%);
         }
       }
+    }
+
+    span {
+      font-weight: 600;
     }
   }
 
@@ -1150,14 +1195,14 @@ a {
 }
 
 .services__contact {
-	padding: 1rem 0 6rem 0;
+  padding: 1rem 0 6rem 0;
   .container {
     &-wrapper {
       margin: 0 auto;
-						display: flex;
-						align-items: center;
-						justify-content: center;
-						flex-wrap: wrap;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
 
       img {
         display: block;
@@ -1167,8 +1212,8 @@ a {
       }
 
       &-text {
-							margin-top: 5rem;
-							max-width: 400px;
+        margin-top: 5rem;
+        max-width: 400px;
         h3 {
           font-size: 2rem;
           letter-spacing: 0.1em;
@@ -1177,12 +1222,12 @@ a {
 
         p {
           // font-size: 1.4rem;
-										margin-bottom: 3rem;
+          margin-bottom: 3rem;
         }
-								a {
-									background-color: $yellow;
-									color: $main-grey;
-								}
+        a {
+          background-color: $yellow;
+          color: $main-grey;
+        }
       }
     }
   }

@@ -37,3 +37,21 @@
     }
   }
 }
+
+@media screen and (min-width: 425px) {
+  .section {
+    &__header {
+      &-center {
+        h3 {
+          font-size: 1.8rem;
+        }
+
+        .header-last {
+          .fancy-style {
+            font-size: 7rem;
+          }
+        }
+      }
+    }
+  }
+}

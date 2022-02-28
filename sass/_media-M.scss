@@ -55,7 +55,7 @@
         left: 65%;
         top: 50%;
         h3 {
-          font-size: 2.4rem;
+          font-size: 2rem;
         }
         .header-last {
           h3 {
@@ -66,35 +66,9 @@
     }
 
     &__about {
-      background-color: $white;
       &-left {
-        width: 50%;
-        margin-right: 2rem;
         &-title {
           font-size: 9rem;
-        }
-        &-subtitle {
-          color: $pink;
-        }
-        img {
-          display: none;
-        }
-        p {
-          margin-top: 0;
-        }
-        a {
-          color: $main-grey;
-          background-color: $light-beige;
-        }
-      }
-      &-right {
-        display: block;
-        width: 43%;
-        max-width: 500px;
-        img {
-          width: 100%;
-          object-fit: cover;
-          border: 2rem solid $light-beige;
         }
       }
     }
@@ -257,26 +231,26 @@
       }
     }
 
-    &__info {
-      &-top {
-        margin-bottom: 8rem;
-        &::after {
-          bottom: -3.5rem;
-        }
-      }
-      &-bottom {
-        display: flex;
-        justify-content: space-between;
-        margin: 0 auto;
-        max-width: 800px;
-        text-align: left;
-      }
-    }
+    // &__info {
+    //   &-top {
+    //     margin-bottom: 8rem;
+    //     &::after {
+    //       bottom: -3.5rem;
+    //     }
+    //   }
+    //   &-bottom {
+    //     display: flex;
+    //     justify-content: space-between;
+    //     margin: 0 auto;
+    //     max-width: 800px;
+    //     text-align: left;
+    //   }
+    // }
 
     &__hobby {
       &-container {
         width: 90vw;
-        max-width: 1200px;
+        // max-width: 1200px;
         margin: 0 auto;
         flex-direction: row;
         justify-content: space-between;
