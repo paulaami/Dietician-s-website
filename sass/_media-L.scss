@@ -264,7 +264,9 @@
   .services .section__hobby {
     &-container {
       justify-content: space-between;
+      max-width: 1200px;
       &-box {
+        width: 45%;
         max-width: 530px;
         margin-bottom: 4rem;
       }
@@ -286,7 +288,7 @@
 
     &-left {
       width: 50%;
-      max-width: 570px;
+      max-width: 650px;
       margin-right: 8rem;
       &-title {
         margin-bottom: 0;
