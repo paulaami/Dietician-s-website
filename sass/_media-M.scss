@@ -74,49 +74,6 @@
     }
   }
 
-  .home .section__work {
-    padding: 20rem 0;
-    .container {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    &-left {
-      display: block;
-      margin-right: 3rem;
-      width: 44%;
-      max-width: 460px;
-      position: relative;
-      &::after {
-        position: absolute;
-        content: "";
-        background-color: #dfd8dc61;
-        top: -13%;
-        left: -20%;
-        height: 100%;
-        width: 95%;
-        z-index: -1;
-      }
-      img {
-        width: 100%;
-        object-fit: cover;
-      }
-    }
-
-    &-right {
-      width: 55%;
-      padding: 0 2rem;
-      max-width: 620px;
-
-      &-box {
-        .box-check {
-          svg {
-            width: 50px;
-          }
-        }
-      }
-    }
-  }
 
   .container-work {
     padding-top: 6rem;
