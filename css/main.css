@@ -253,7 +253,7 @@ a:hover {
   padding: 20px;
   display: inline-block;
   cursor: pointer;
-  background-color: transparent;
+  background-color: rgba(255, 255, 255, 0.678);
   border: 0;
 }
 
@@ -518,7 +518,6 @@ a:hover {
 }
 
 .section__about {
-  margin-top: 5rem;
   padding: 6rem 0;
   background-color: #F0F3F3;
 }
@@ -609,6 +608,7 @@ a:hover {
 .section__about-list ul li {
   font-size: 1.6rem;
   margin-bottom: 0.5rem;
+  font-family: "Cabin", sans-serif;
 }
 
 .section__about .btn-style {
@@ -770,8 +770,7 @@ a:hover {
 }
 
 .success-wrapper {
-  margin-top: 4rem;
-  padding: 3rem;
+  padding: 6rem 3rem;
   background-color: #f58c7c;
   color: #fff;
 }
@@ -825,11 +824,12 @@ a:hover {
           justify-content: space-between;
   max-width: 230px;
   text-align: center;
-  height: 170px;
+  height: 180px;
 }
 
 .success-wrapper-box-text .counter {
-  font-size: 3rem;
+  font-size: 4rem;
+  font-family: "Cabin", sans-serif;
 }
 
 .success-wrapper-box-text img {
@@ -1164,6 +1164,10 @@ a:hover {
   font-family: "Rokkitt", serif;
   font-size: 1.5rem;
   max-width: 100%;
+}
+
+.footer__top-form form button {
+  cursor: pointer;
 }
 
 .footer__bottom {
