@@ -95,11 +95,6 @@ body {
   width: 90vw;
   max-width: 1500px;
   margin: 0 auto;
-  overflow-x: hidden;
-}
-
-section {
-  overflow-x: hidden;
 }
 
 ul {
@@ -419,7 +414,7 @@ a:hover {
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  top: 6.4rem;
+  top: 7.8rem;
   right: 0;
   margin: 0 auto;
   width: 100vw;
@@ -451,7 +446,7 @@ a:hover {
 }
 
 .menu--scroll .navigation {
-  top: 7.1rem;
+  top: 7.2rem;
 }
 
 .show {
@@ -465,6 +460,7 @@ a:hover {
 
 .section__header {
   padding-bottom: 180px;
+  overflow: hidden;
 }
 
 .section__header .container {
@@ -538,6 +534,7 @@ a:hover {
 .section__about {
   padding: 6rem 0;
   background-color: #F0F3F3;
+  overflow: hidden;
 }
 
 .section__about .container {
@@ -635,6 +632,7 @@ a:hover {
 
 .section__work {
   padding: 6rem 0;
+  overflow: hidden;
 }
 
 .section__work .container {
@@ -690,14 +688,17 @@ a:hover {
 
 .section__work-right-box .box-check p {
   font-weight: 400;
+  width: 90%;
   max-width: 490px;
 }
 
 .section__work-right-box .box-check svg {
+  display: block;
+  width: 70px;
+  width: 10%;
   -ms-flex-item-align: start;
       align-self: flex-start;
   margin-right: 1rem;
-  width: 70px;
   fill: #829f9f;
 }
 
@@ -1267,6 +1268,7 @@ a:hover {
 
 .section__aboutme {
   padding-bottom: 6rem;
+  overflow: hidden;
 }
 
 .section__aboutme .container {
@@ -1316,6 +1318,7 @@ a:hover {
 .section__info {
   padding: 6rem 0;
   background-color: #F0F3F3;
+  overflow: hidden;
 }
 
 .section__info-top {
@@ -1361,6 +1364,7 @@ a:hover {
 
 .section__hobby {
   padding: 6rem 0;
+  overflow: hidden;
 }
 
 .section__hobby .heading-about {
