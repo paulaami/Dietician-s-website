@@ -1,6 +1,7 @@
 @media screen and (min-width: 768px) {
   .header {
-    margin-bottom: 3em;
+    margin-top: 3rem;
+    margin-bottom: 4rem;
     &__title {
       font-size: 8rem;
     }
@@ -76,7 +77,6 @@
 
 
   .container-work {
-    padding-top: 6rem;
     display: flex;
     justify-content: space-around;
 
@@ -155,38 +155,17 @@
       margin: 1rem 0;
     }
     &__bottom {
-      flex-wrap: nowrap;
+      flex-direction: row;
       justify-content: space-between;
-      align-items: center;
 
       p {
-        font-size: 1.3rem;
-        &:last-of-type,
-        &:first-of-type,
-        &:nth-last-of-type(2) {
-          margin: 0 1rem;
-          flex-basis: auto;
-        }
+        margin-bottom: .9rem;
       }
     }
   }
 
-  /*  A B O U T */
+ 
   .section {
-    &__aboutme {
-      .container {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-      }
-
-      &-text {
-        max-width: 400px;
-        align-self: center;
-        justify-self: flex-start;
-        margin-left: 2rem;
-      }
-    }
 
     // &__info {
     //   &-top {
@@ -213,7 +192,7 @@
         justify-content: space-between;
         align-items: flex-start;
         &-box {
-          padding: 0 1rem;
+          padding: 0 2.3rem;
           width: 50%;
         }
       }

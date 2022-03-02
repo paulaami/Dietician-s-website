@@ -6,8 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Dietetyka Kliniczna - Alesandra Barwińska</title>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -19,42 +19,51 @@
 
 <body class="services">
   <header class="header" id="home">
-    <a href="#"><div class="logo">
-    <img class="logo-icon apple" src="./assets/svg/2064496_apple_education_learn_school_student_icon.svg" alt="" />
-    <img class="logo-icon cake" src="./assets/svg/4171319_baked_cake_cup_day_love_icon.svg" alt="" />
-    <img class="header__logo" src="./assets/svg/logo_strona.svg" alt="" /></a>
+    <a href="#">
+      <div class="logo">
+        <img class="logo-icon apple" src="./assets/svg/2064496_apple_education_learn_school_student_icon.svg" alt="" />
+        <img class="logo-icon cake" src="./assets/svg/4171319_baked_cake_cup_day_love_icon.svg" alt="" />
+        <img class="header__logo" src="./assets/svg/logo_strona.svg" alt="" />
+    </a>
     </div>
-    <a href="#"><h2 class="header__title">Szalona Dietetyczka</h2></a>
-    <a href="#"><h1 class="header__subtitle">Aleksandra Barwińska</h1></a>
+    <a href="#">
+      <h2 class="header__title">Szalona Dietetyczka</h2>
+    </a>
+    <a href="#">
+      <h1 class="header__subtitle">Aleksandra Barwińska</h1>
+    </a>
   </header>
-  <nav class="nav">
-    <button class="nav__menu">
-      <span class="nav__menu-text">menu</span>
-      <span class="nav__menu-box">
-        <span class="nav__menu-inner"></span>
+  <nav class="nav detect-nav">
+    <button class="nav__menu detect-nav">
+      <span class="nav__menu-text detect-nav">menu</span>
+      <span class="nav__menu-box detect-nav">
+        <span class="nav__menu-inner detect-nav"></span>
       </span>
     </button>
-    <div class="navigation">
-      <ul class="nav__list">
-        <li class="nav__list-item"><a href="index.html">Home</a></li>
-        <li class="nav__list-item"><a href="about.html">O mnie</a></li>
-        <li class="nav__list-item"><a href="#">Współpraca</a></li>
-        <li class="nav__list-item"><a href="contact.html">Kontakt</a></li>
+    <div class="navigation detect-nav">
+      <ul class="nav__list detect-nav">
+        <li class="nav__list-item detect-nav"><a href="index.html">Home</a></li>
+        <li class="nav__list-item detect-nav"><a href="about.html">O mnie</a></li>
+        <li class="nav__list-item detect-nav"><a href="#">Współpraca</a></li>
+        <li class="nav__list-item detect-nav"><a href="contact.html">Kontakt</a></li>
       </ul>
-      <a class="nav__list-instagram" href="">@szalona_dietetyczka</a>
-      <div class="nav__icons">
-        <a href=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+      <a class="nav__list-instagram detect-nav" href="https://www.instagram.com/szalonadietetyczka/"
+        target="_blank">@szalona_dietetyczka</a>
+      <div class="nav__icons detect-nav">
+        <a href="https://www.facebook.com/szalonadietetyczka" target="_blank"><svg xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 512 512">
             <path
               d="M288 192v-38.1c0-17.2 3.8-25.9 30.5-25.9H352V64h-55.9c-68.5 0-91.1 31.4-91.1 85.3V192h-45v64h45v192h83V256h56.4l7.6-64h-64z">
             </path>
           </svg></a>
-        <a href=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+        <a href="https://www.instagram.com/szalonadietetyczka/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 512 512">
             <circle cx="256" cy="255.833" r="80"></circle>
             <path
               d="M177.805 176.887c21.154-21.154 49.28-32.93 79.195-32.93s58.04 11.838 79.195 32.992c13.422 13.42 23.01 29.55 28.232 47.55H448.5v-113c0-26.51-20.49-47-47-47h-288c-26.51 0-49 20.49-49 47v113h85.072c5.222-18 14.81-34.19 28.233-47.614zM416.5 147.7c0 7.07-5.73 12.8-12.8 12.8h-38.4c-7.07 0-12.8-5.73-12.8-12.8v-38.4c0-7.07 5.73-12.8 12.8-12.8h38.4c7.07 0 12.8 5.73 12.8 12.8v38.4zm-80.305 187.58c-21.154 21.153-49.28 32.678-79.195 32.678s-58.04-11.462-79.195-32.616c-21.115-21.115-32.76-49.842-32.803-78.842H64.5v143c0 26.51 22.49 49 49 49h288c26.51 0 47-22.49 47-49v-143h-79.502c-.043 29-11.687 57.664-32.803 78.78z">
             </path>
           </svg></a>
-        <a class="mail" href=""><svg height="50px" version="1.1" viewBox="0 0 48 48" width="50px"
+        <a class="mail" href="mailto: abc@example.com"><svg height="50px" version="1.1" viewBox="0 0 48 48" width="50px"
             xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
             <title />
             <desc />
@@ -74,30 +83,30 @@
   <main>
     <section class="section__work">
       <div class="container container-work">
-        <div class="section__work-left section__work-main">
+        <div class="section__work-left section__work-main" data-aos="fade-in" data-aos-duration="600">
           <img src="./assets/images/sincerely-media-zw8t5aMmJQQ-unsplash.jpg" alt="">
 
         </div>
         <div class="section__work-right">
-          <h2 class="heading-style">
+          <h2 class="heading-style" data-aos="fade-in" data-aos-delay="100" data-aos-duration="600">
             JAK WYGLĄDA WSPÓŁPRACA?
           </h2>
           <div class="section__work-right-box">
-            <div class="box-check"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+            <div class="box-check" data-aos="fade-up" data-aos-delay="200" data-aos-duration="600"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                 <path d="M186.301 339.893L96 249.461l-32 30.507L186.301 402 448 140.506 416 110"></path>
               </svg>
               <p class="text-small">Zindywidualizowana do Twoich potrzeb: stanu zdrowotnego, trybu życia i preferencji
                 żywieniowych.
               </p>
             </div>
-            <div class="box-check"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+            <div class="box-check" data-aos="fade-up" data-aos-delay="300" data-aos-duration="600"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                 <path d="M186.301 339.893L96 249.461l-32 30.507L186.301 402 448 140.506 416 110"></path>
               </svg>
               <p class="text-small">Pojedyncza konsultacja dietetyczna lub współpraca długoterminowa - wspólnie
                 wybieramy jaki rodzaj współpracy będzie dla Ciebie odpowiedni.
               </p>
             </div>
-            <div class="box-check"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+            <div class="box-check" data-aos="fade-up" data-aos-delay="400" data-aos-duration="600"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                 <path d="M186.301 339.893L96 249.461l-32 30.507L186.301 402 448 140.506 416 110"></path>
               </svg>
               <p class="text-small">Z chęcią podejmuje współpracę z różnymi firmami, szkołami i innymi placówkami -
@@ -105,12 +114,12 @@
               </p>
             </div>
           </div>
-          <a class="btn-style" href="">zobacz szczegóły</a>
+          <a class="btn-style" data-aos="fade-up" data-aos-delay="500" data-aos-duration="600" href="">zobacz szczegóły</a>
         </div>
       </div>
 
       <div class="container section__work-two single">
-        <div class="section__work-right">
+        <div class="section__work-right" data-aos="fade-right" data-aos-duration="600">
           <img class="work-icon" src="./assets/images/research.png" alt="">
           <h2 class="heading-style">
             Pierwsza konsultacja dietetyczna
@@ -119,16 +128,15 @@
             zdrowia, poznania preferencji żywieniowych pacjenta oraz dla pozyskania innych kluczowych informacji będące
             podstawą owocnej współpracy.</h3>
           <p>Koszt pierwszej konsultacji przed rozpoczęciem współpracy: 150 zł</p>
-          <!-- <h3 class="text-small">Obok współpracy długoterminowej zachęcam również do korzystania z pojedynczych konsultacji. Dzięki temu w konkretny sposób postaram się przekazać Ci dawkę wiedzy, która może Ci pomóc w rozwiązaniu Twojego problemu w kwestii odżywiania. Odpowiem na nurtujące pytania w kwestii odżywiania, mogę stworzyć zindywidualizowane zalecenia żywieniowe po przeprowadzeniu wnikliwej analizy Twojego aktualnego sposobu odżywiania, trybu życia.</h3> -->
         </div>
 
-        <div class="section__work-left">
+        <div class="section__work-left" data-aos="fade-left" data-aos-duration="600">
           <img src="./assets/images/organiser.jpg" alt="">
         </div>
       </div>
 
       <div class="container section__work-two longterm">
-        <div class="section__work-right">
+        <div class="section__work-right" data-aos="fade-left" data-aos-delay="100" data-aos-duration="600">
           <img class="work-icon" src="./assets/images/chat.png" alt="">
           <h2 class="heading-style">
             Pojedyncza konsultacja dietetyczna
@@ -136,17 +144,17 @@
           <h3 class="text-small">Jeśli pacjent nie potrzebuje jadłospisów - współpraca może opierać się na pojedynczej
             konsultacji dietetycznej (raz/dwa/ile chcesz w miesiącu) lub na współpracy długoterminowej bez planu
             żywieniowego. Pacjent wybiera która opcja będzie dla niego najodpowiedniejsza.</h3>
-          <p>Koszt pojedynczej konsultacji dietetycznej: 150 zł</p>
-          <p>Wraz z indywidualnymi zaleceniami dla pacjenta + 50 zł</p>
+          <p >Koszt pojedynczej konsultacji dietetycznej: 150 zł</p>
+          <p >Wraz z indywidualnymi zaleceniami dla pacjenta + 50 zł</p>
         </div>
 
-        <div class="section__work-left">
+        <div class="section__work-left" data-aos="fade-right" data-aos-delay="100" data-aos-duration="600">
           <img src="./assets/images/consultation.jpg" alt="">
         </div>
       </div>
 
       <div class="container section__work-two single">
-        <div class="section__work-right">
+        <div class="section__work-right" data-aos="fade-right" data-aos-delay="300" data-aos-duration="600">
           <img class="work-icon" src="./assets/images/deadline.png" alt="">
           <h2 class="heading-style">
             Współpraca długoterminowa z planem żywieniowym
@@ -159,14 +167,14 @@
           <p>Koszt współpracy długoterminowej: 350 zł</p>
         </div>
 
-        <div class="section__work-left">
+        <div class="section__work-left" data-aos="fade-left" data-aos-delay="300" data-aos-duration="600">
           <img src="./assets/images/organiser.jpg" alt="">
         </div>
       </div>
 
 
       <div class="container section__work-two longterm">
-        <div class="section__work-right">
+        <div class="section__work-right" data-aos="fade-left" data-aos-delay="400" data-aos-duration="600">
           <img class="work-icon" src="./assets/images/meeting.png" alt="">
           <h2 class="heading-style">
             Współpraca długoterminowa bez planu żywieniowego
@@ -179,7 +187,7 @@
           <p>Koszt współpracy długoterminowej: 250 zł</p>
         </div>
 
-        <div class="section__work-left">
+        <div class="section__work-left" data-aos="fade-right" data-aos-delay="400" data-aos-duration="600">
           <img src="./assets/images/consultation.jpg" alt="">
         </div>
       </div>
@@ -191,30 +199,30 @@
         <h2 class="heading-style">Wyobraź sobie...</h2>
         <div class="section__motivation-wrapper">
           <div class="section__motivation-wrapper-box">
-            <img src="./assets/icons/dinner.png" alt="">
+            <img data-aos="fade-up" data-aos-duration="600" src="./assets/icons/dinner.png" alt="">
             <p class="text-small">Nie być na ,,diecie” tylko jeść wszystko co lubisz przez racjonalne odżywianie! ;-)
             </p>
           </div>
           <div class="section__motivation-wrapper-box">
-            <img src="./assets/icons/champagne.png" alt="">
+            <img data-aos="fade-up" data-aos-delay="100" data-aos-duration="600" src="./assets/icons/champagne.png" alt="">
             <p class="text-small">Osiągnąć swój cel w przyjemny i naprawdę łatwy sposób!</p>
           </div>
           <div class="section__motivation-wrapper-box">
-            <img src="./assets/icons/agreement.png" alt="">
+            <img data-aos="fade-up" data-aos-delay="200" data-aos-duration="600" src="./assets/icons/agreement.png" alt="">
             <p class="text-small">Współpracować z dietetykiem w miłej i profesjonalnej atmosferze. Tak, da się ;-)</p>
           </div>
           <div class="section__motivation-wrapper-box">
-            <img src="./assets/icons/surgery.png" alt="">
+            <img data-aos="fade-up" data-aos-delay="300" data-aos-duration="600" src="./assets/icons/surgery.png" alt="">
             <p class="text-small">W natłoku informacji zewsząd – otrzymać konkretne zalecenia żywienia pod siebie a nie
               dla ogółu </p>
           </div>
           <div class="section__motivation-wrapper-box">
-            <img src="./assets/icons/career.png" alt="">
+            <img data-aos="fade-up" data-aos-delay="400" data-aos-duration="600" src="./assets/icons/career.png" alt="">
             <p class="text-small">Wiesz od czego rozpocząć swoją drogę z racjonalnym odżywianiem i dążeniem do
               upragnionego celu, pozwalając sobie na popełnianie błędów. Co jest ludzkie i normalne!</p>
           </div>
           <div class="section__motivation-wrapper-box">
-            <img src="./assets/icons/savings.png" alt="">
+            <img data-aos="fade-up" data-aos-delay="500" data-aos-duration="600"src="./assets/icons/savings.png" alt="">
             <p class="text-small">Być bogatszym o aktualną, potwierdzoną badaniami medycznymi - wiedzę w aspekcie
               żywienia</p>
           </div>
@@ -287,37 +295,45 @@
         </div>
       </div>
     </section>
-    <h2 class="heading-style" style="text-align:center; margin-bottom: 2rem;">Chcesz być jedną z tych osób?</h2>
-    <h3 class="fancy-style" style="text-align:center">Napisz do mnie!</h3>
+    <h2 class="heading-style" style="text-align:center; margin-bottom: 2rem;" data-aos="fade-in" data-aos-duration="600">Chcesz być jedną z tych osób?</h2>
+    <h3 class="fancy-style" style="text-align:center" data-aos="fade-in" data-aos-delay="100" data-aos-duration="600">Napisz do mnie!</h3>
   </main>
   <footer class="footer">
+    <h2 class="heading-style">bądźmy w kontakcie!</h2>
     <div class="container">
       <div class="footer__gallery">
-        <div class="footer__gallery-box"><a href="https://www.instagram.com/p/CUppUicohZL/" target="_blank">
+        <div class="footer__gallery-box" data-aos="fade-in" data-aos-duration="600"><a
+            href="https://www.instagram.com/p/CUppUicohZL/" target="_blank">
             <img src="./assets/images/footer_1.jpg" alt="zdjęcie Aleksandry jedzącej naleśniki" /></a>
         </div>
-        <div class="footer__gallery-box"><a href="https://www.instagram.com/p/CRHc5jZH82D/" target="_blank">
+        <div class="footer__gallery-box" data-aos="fade-in" data-aos-delay="200" data-aos-duration="600"><a
+            href="https://www.instagram.com/p/CRHc5jZH82D/" target="_blank">
             <img src="./assets/images/footer_2.jpeg" alt="zdjęcie Aleksandry jedzącej kokosa w oceanie" /></a>
         </div>
-        <div class="footer__gallery-box"><a href="https://www.instagram.com/p/CVagM2Dsmcv/" target="_blank">
+        <div class="footer__gallery-box" data-aos="fade-in" data-aos-delay="300" data-aos-duration="600"><a
+            href="https://www.instagram.com/p/CVagM2Dsmcv/" target="_blank">
             <img src="./assets/images/footer_3.jpg" alt="zdjęcie pizzy" /></a>
         </div>
-        <div class="footer__gallery-box"><a href="https://www.instagram.com/p/CMyz1TtnE8R/" target="_blank">
+        <div class="footer__gallery-box" data-aos="fade-in" data-aos-delay="400" data-aos-duration="600"><a
+            href="https://www.instagram.com/p/CMyz1TtnE8R/" target="_blank">
             <img src="./assets/images/footer_4.jpg" alt="zdjęcie owsianki" /></a>
         </div>
-        <div class="footer__gallery-box"><a href="https://www.instagram.com/p/CRgGpJDLQuu/" target="_blank">
+        <div class="footer__gallery-box" data-aos="fade-in" data-aos-delay="500" data-aos-duration="600"><a
+            href="https://www.instagram.com/p/CRgGpJDLQuu/" target="_blank">
             <img src="./assets/images/footer_5.jpg" alt="zdjęcie naleśników" /></a>
         </div>
         <div class="footer__gallery-box last-box">
           <p>bądź na bieżąco</p>
           <div class="footer-icons">
-            <a href=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+            <a href="https://www.instagram.com/szalonadietetyczka/" target="_blank"><svg
+                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                 <circle cx="256" cy="255.833" r="80"></circle>
                 <path
                   d="M177.805 176.887c21.154-21.154 49.28-32.93 79.195-32.93s58.04 11.838 79.195 32.992c13.422 13.42 23.01 29.55 28.232 47.55H448.5v-113c0-26.51-20.49-47-47-47h-288c-26.51 0-49 20.49-49 47v113h85.072c5.222-18 14.81-34.19 28.233-47.614zM416.5 147.7c0 7.07-5.73 12.8-12.8 12.8h-38.4c-7.07 0-12.8-5.73-12.8-12.8v-38.4c0-7.07 5.73-12.8 12.8-12.8h38.4c7.07 0 12.8 5.73 12.8 12.8v38.4zm-80.305 187.58c-21.154 21.153-49.28 32.678-79.195 32.678s-58.04-11.462-79.195-32.616c-21.115-21.115-32.76-49.842-32.803-78.842H64.5v143c0 26.51 22.49 49 49 49h288c26.51 0 47-22.49 47-49v-143h-79.502c-.043 29-11.687 57.664-32.803 78.78z">
                 </path>
               </svg></a>
-            <a href=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+            <a href="https://www.facebook.com/szalonadietetyczka" target="_blank"><svg
+                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                 <path
                   d="M288 192v-38.1c0-17.2 3.8-25.9 30.5-25.9H352V64h-55.9c-68.5 0-91.1 31.4-91.1 85.3V192h-45v64h45v192h83V256h56.4l7.6-64h-64z">
                 </path>
@@ -332,23 +348,26 @@
         <h3 class="fancy-style">Szalona Dietetyczka</h3>
         <h4>menu</h4>
         <ul class="footer__top-link-menu">
-          <li><a href="#">współpraca</a></li>
+          <li><a href="services.html">współpraca</a></li>
           <li><a href="about.html">o mnie</a></li>
           <li><a href="contact.html">kontakt</a></li>
         </ul>
         <div class="nav__icons">
-          <a href=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+          <a href="https://www.facebook.com/szalonadietetyczka" target="_blank" data-aos="fade-up" data-aos-delay="100"
+            data-aos-duration="600"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
               <path
                 d="M288 192v-38.1c0-17.2 3.8-25.9 30.5-25.9H352V64h-55.9c-68.5 0-91.1 31.4-91.1 85.3V192h-45v64h45v192h83V256h56.4l7.6-64h-64z">
               </path>
             </svg></a>
-          <a href=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+          <a href="https://www.instagram.com/szalonadietetyczka/" target="_blank" data-aos="fade-up"
+            data-aos-delay="200" data-aos-duration="600"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
               <circle cx="256" cy="255.833" r="80"></circle>
               <path
                 d="M177.805 176.887c21.154-21.154 49.28-32.93 79.195-32.93s58.04 11.838 79.195 32.992c13.422 13.42 23.01 29.55 28.232 47.55H448.5v-113c0-26.51-20.49-47-47-47h-288c-26.51 0-49 20.49-49 47v113h85.072c5.222-18 14.81-34.19 28.233-47.614zM416.5 147.7c0 7.07-5.73 12.8-12.8 12.8h-38.4c-7.07 0-12.8-5.73-12.8-12.8v-38.4c0-7.07 5.73-12.8 12.8-12.8h38.4c7.07 0 12.8 5.73 12.8 12.8v38.4zm-80.305 187.58c-21.154 21.153-49.28 32.678-79.195 32.678s-58.04-11.462-79.195-32.616c-21.115-21.115-32.76-49.842-32.803-78.842H64.5v143c0 26.51 22.49 49 49 49h288c26.51 0 47-22.49 47-49v-143h-79.502c-.043 29-11.687 57.664-32.803 78.78z">
               </path>
             </svg></a>
-          <a class="mail" href=""><svg height="50px" version="1.1" viewBox="0 0 48 48" width="50px"
+          <a class="mail" href="mailto: abc@example.com" data-aos="fade-up" data-aos-delay="300"
+            data-aos-duration="600"><svg height="50px" version="1.1" viewBox="0 0 48 48" width="50px"
               xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
               <title />
               <desc />
@@ -364,7 +383,7 @@
         </div>
       </div>
 
-      <div class="footer__top-form">
+      <div class="footer__top-form" data-aos="fade-in" data-aos-delay="400" data-aos-duration="600">
         <h3>Formularz kontaktowy</h3>
         <p>Jeśli masz jakieś pytania skontakuj się ze mną przez formularz</p>
         <div class="form">
@@ -380,7 +399,7 @@
         </div>
       </div>
 
-      <div class="footer__top-arrow">
+      <div class="footer__top-arrow" data-aos="fade-up" data-aos-delay="400" data-aos-duration="800">
         <a href="#home"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
             <path
               d="M461.49,248.51,394,181a12,12,0,0,0-17,17l46.52,46.51H60a12,12,0,0,0,0,24H424.53L377,316a12,12,0,0,0,17,17l67.5-67.5A12,12,0,0,0,461.49,248.51Z">
@@ -389,24 +408,24 @@
         <a class="to-top" href="#home">top</a>
       </div>
 
-      <div class="footer__top-logo">
+      <div class="footer__top-logo" data-aos="fade-left" data-aos-delay="800" data-aos-duration="800">
         <img src="./assets/svg/logo_footer.svg" alt="">
       </div>
 
     </div>
     <div class="footer__bottom">
 
-      <p><a href="">Polityka Prywatności</a></p>
+      <p><a href="policy.html">Polityka Prywatności</a></p>
       <p>Copyright © <span>2022</span> Szalona Dietetyczka</p>
-      <p>Designed by <a href="">Milko Design</a></p>
+      <p>Designed by <a href="https://www.instagram.com/milko.design/">MILKO DESIGN</a></p>
 
     </div>
 
   </footer>
   <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
   <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-  <script src="./scripts/slick.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="./scripts/aos.js"></script>
   <script type="module" src="./scripts/main.js"></script>
 </body>
 
