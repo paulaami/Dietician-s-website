@@ -38,6 +38,11 @@ body {
 	width: 90vw;
 	max-width: 1500px;
 	margin: 0 auto;
+	overflow-x: hidden;
+}
+
+section {
+	overflow-x: hidden;
 }
 
 ul {
