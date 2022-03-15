@@ -752,6 +752,24 @@ a:hover {
   display: none;
 }
 
+.services .section__work-left img {
+  -o-object-position: 50% 45%;
+     object-position: 50% 45%;
+}
+
+.services .image-service {
+  max-width: 520px;
+  max-height: 400px;
+  overflow: hidden;
+}
+
+.services .image-service img {
+  -o-object-position: center;
+     object-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .services .section__work-left,
 .services .section__work-right {
   -ms-flex-item-align: start;
@@ -1278,6 +1296,8 @@ a:hover {
 .section__aboutme-img {
   margin: 0 auto;
   max-width: 700px;
+  max-height: 500px;
+  overflow: hidden;
 }
 
 .section__aboutme-img img {

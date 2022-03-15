@@ -595,6 +595,21 @@ a {
     &::after {
       display: none;
     }
+
+    img {
+      object-position: 50% 45%;
+    }
+  }
+
+  .image-service {
+    max-width: 520px;
+    max-height: 400px;
+    overflow: hidden;
+
+    img {
+      object-position: center;
+      object-fit: cover;
+    }
   }
 
   .section__work-left,
@@ -1019,6 +1034,8 @@ a {
     &-img {
       margin: 0 auto;
       max-width: 700px;
+      max-height: 500px;
+      overflow: hidden;
       img {
         @include img-style;
       }
