@@ -1,23 +1,8 @@
 @media screen and (min-width: 375px) {
-  .header {
-    &__title {
-      // font-size: 2.3rem;
-    }
-  }
-
   .section {
     &__header {
       &-left {
         height: 50vh;
-      }
-      &-center {
-        // h3 {
-        //   font-size: 3.3rem;
-        //   letter-spacing: 0.2rem;
-        // }
-        // a {
-        //   font-size: 1.6rem;
-        // }
       }
     }
   }

@@ -1,25 +1,43 @@
 @keyframes flyApple {
- 0% {
-     transform: translateY(0);
- }
- 50% {
-     transform: translateY(5px);
- }
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(5px);
+  }
 
- 100% { 
-   transform: translateY(0);
- }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 @keyframes flyCake {
- 0% {
-     transform: translateY(5px);
- }
- 50% {
-     transform: translateY(0);
- }
+  0% {
+    transform: translateY(5px);
+  }
+  50% {
+    transform: translateY(0);
+  }
 
- 100% {
-   transform: translateY(5px);
- }
+  100% {
+    transform: translateY(5px);
+  }
+}
+
+@keyframes show-alert {
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes hide-alert {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
 }

@@ -1,44 +1,44 @@
 @mixin img-style {
-	height: 100%;
-	width: 100%;
-	object-fit: cover;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
 @mixin text-style {
-	line-height: 1.5;
-	letter-spacing: 0.2em;
-	text-transform: uppercase;
+  line-height: 1.5;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
 }
 
 @mixin flex-center {
-	display: flex;
-	align-items: center;
-	justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 @mixin flex-column {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 @mixin background-image {
-	position: fixed;
-	top: 0;
-	left: 0;
-	background-position: center;
-	background-size: 150%;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	width: 100%;
-	height: 150%;
-	z-index: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-position: center;
+  background-size: 150%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  width: 100%;
+  height: 150%;
+  z-index: 0;
 }
 
 @mixin absolute-center {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
